@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora com Boas-Vindas Automática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 400px;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+
+        #resultado ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .result-soma { color: #4caf50; }
+        .result-subtracao { color: #f44336; }
+        .result-multiplicacao { color: #2196f3; }
+        .result-divisao { color: #ffeb3b; }
+
+        .btn-calc {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator text-center">
+    <h1 class="mb-4">Calculadora</h1>
+
+    <div class="mb-3">
+        <input type="number" id="num1" class="form-control" placeholder="Primeiro número">
+    </div>
+    <div class="mb-3">
+        <input type="number" id="num2" class="form-control" placeholder="Segundo número">
+    </div>
+
+    <!-- Botão de Calcular -->
+    <button id="btnCalcular" class="btn btn-warning btn-calc mb-3">Calcular</button>
+
+    <div id="resultado" class="bg-dark p-3 rounded mt-3">
+        <h5>Resultados:</h5>
+        <ul id="resultados-list"></ul>
+    </div>
+</div>
+
+
+<script src="scritp.js"></script>
+
+</body>
+</html>
